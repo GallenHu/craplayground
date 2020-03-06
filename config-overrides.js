@@ -50,6 +50,7 @@ module.exports = function override(config, env) {
   });
 
   config = rewireLess.withLoaderOptions({
+    javascriptEnabled: true,
     modifyVars: lessOverrides
   })(config, env);
 
